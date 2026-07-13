@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Task Planner - Week 1 Task</title>
+    <link rel="stylesheet" href="week1task.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-wrap">
+            <div class="logo">
+                <span>⚡</span> <strong>Task</strong>Flow
+            </div>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container main-grid">
+        <!-- Task Creation Form Section -->
+        <section class="planner-section" aria-labelledby="form-heading">
+            <h1 id="form-heading">Manage Your Semester Tasks</h1>
+            <p class="lead-text">Add tasks below. They will dynamically populate your list with zero page reloads.</p>
+            
+            <form id="task-form" class="task-form">
+                <div class="form-group">
+                    <label for="task-title">Task Title</label>
+                    <input type="text" id="task-title" placeholder="e.g., Debug JavaScript" required>
+                </div>
+                <div class="form-group">
+                    <label for="task-desc">Short Description</label>
+                    <input type="text" id="task-desc" placeholder="e.g., Clean up variable scope errors..." required>
+                </div>
+                <button type="submit" class="btn-primary">Add Task</button>
+            </form>
+        </section>
+
+        <!-- Live Tasks Display Section -->
+        <section class="tasks-section" aria-labelledby="tasks-heading">
+            <h2 id="tasks-heading">Live Tasks (<span id="task-count">0</span>)</h2>
+            <div id="tasks-container" class="tasks-container">
+                <!-- Fallback empty state -->
+                <div id="empty-state" class="empty-state">
+                    <p>No tasks yet. Fill out the form to create your first task!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 TaskFlow. Built with semantic markup and responsive CSS.</p>
+        </div>
+    </footer>
+
+    <!-- Linked to updated JS file name -->
+    <script src="js/week1task.js"></script>
+</body>
+</html>
