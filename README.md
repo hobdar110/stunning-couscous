@@ -49,15 +49,7 @@ ai-capstone/
 
 ### Clone the repository
 
-```bash
-git clone https://github.com/hobdar110/ai-capstone.git
-```
-
 ### Navigate to the project
-
-```bash
-cd ai-capstone
-```
 
 ### Run the project
 
